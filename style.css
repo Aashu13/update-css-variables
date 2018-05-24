@@ -1,0 +1,37 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Ariel;
+    font-weight: normal;
+    color: rgba(179, 151, 21);
+}
+
+div {
+    margin: 30px;
+    font-size: 40px;
+    color: #ddd;
+}
+
+:data {
+    --base: #ffee44;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    max-width: 60%;
+    min: 50%;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+.h1 {
+    color: var(--base);
+}
