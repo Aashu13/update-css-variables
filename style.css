@@ -1,39 +1,55 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-    text-align: center;
-    font-size: 50px;
-    font-family: Ariel;
-    font-weight: normal;
-    color: rgba(179, 151, 21);
+  text-align: center;
+  font-size: 50px;
+  font-family: Ariel;
+  font-weight: normal;
+  color: rgba(179, 151, 21);
 }
 
 div {
-    margin: 30px;
-    font-size: 40px;
-    color: #ddd;
+  margin: 30px;
+  font-size: 40px;
+  color: #ddd;
 }
 
 :data {
-    --base: #ffee44;
-    --spacing: 10px;
-    --blur: 10px;
+  --base: #ffee44;
+  --spacing: 10px;
+  --blur: 10px;
 }
 
 img {
-    max-width: 60%;
-    min-width: 50%;
-    display: block;
-    margin: auto;
-    padding: var(--spacing);
-    background: var(--base);
-    filter: blur(var(--blur));
+  max-width: 60%;
+  min-width: 50%;
+  display: block;
+  margin: auto;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
 }
 
 .h1 {
-    color: var(--base);
+  color: var(--base);
+}
+
+input[type="range"] {
+  -webkit-appearance: none !important;
+  background-color: #f1f1f1;
+  height: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background-color: #ddd;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
 }
